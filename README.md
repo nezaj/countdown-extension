@@ -6,7 +6,7 @@ that.
 
 [Generated via Claude.][1]
 
-![](https://www.dropbox.com/paper/ep/redirect/image?url=https%3A%2F%2Fpaper-attachments.dropboxusercontent.com%2Fs_EAB332C6C58069150D286905654E09BF8C755B11D4EF5FB2E3B43BA9FDA13C7F_1749233238665_CleanShot%2B2025-06-06%2Bat%2B11.06.472x.png&hmac=8mZDjwb5ntMT2iSWfod44qGFe2YzHoV5C1rE9UXCRCg%3D&width=1490)
+![](./preview.png)
 
 
 
