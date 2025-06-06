@@ -1,10 +1,9 @@
 function updateCountdown() {
   const targetDate = new Date('August 22, 2025 00:00:00');
-  const startDate = new Date('June 6, 2025'); // Today's date
   const now = new Date();
 
   const difference = targetDate - now;
-  const days = Math.ceil(difference / (1000 * 60 * 60 * 24));
+  const days = Math.floor(difference / (1000 * 60 * 60 * 24));
 
   document.getElementById('days').textContent = days;
 
