@@ -27,12 +27,6 @@ function updateCountdown() {
     hour12: true
   };
   document.getElementById('time').textContent = now.toLocaleTimeString('en-US', timeOptions);
-
-  // Update progress bar
-  const totalDays = (targetDate - startDate) / (1000 * 60 * 60 * 24);
-  const daysElapsed = (now - startDate) / (1000 * 60 * 60 * 24);
-  const progress = (daysElapsed / totalDays) * 100;
-  document.getElementById('progress').style.width = Math.min(Math.max(progress, 0), 100) + '%';
 }
 
 // Update immediately
