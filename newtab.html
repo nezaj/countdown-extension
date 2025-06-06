@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>New Tab</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      width: 100vw;
+      height: 100vh;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: #fafaf8;
+      color: #2c2c2c;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .container {
+      text-align: center;
+      animation: fadeIn 1.5s ease-out;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    h1 {
+      font-size: 1rem;
+      margin: 0 0 3rem 0;
+      font-weight: 400;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+    
+    .countdown {
+      font-size: 10rem;
+      font-weight: 100;
+      margin: 1rem 0;
+      line-height: 1;
+      letter-spacing: -5px;
+      transition: opacity 0.3s ease;
+    }
+    
+    .countdown:hover {
+      opacity: 0.8;
+    }
+    
+    .label {
+      font-size: 1.2rem;
+      margin-bottom: 4rem;
+      letter-spacing: 2px;
+      font-weight: 300;
+    }
+    
+    .date {
+      font-size: 1rem;
+      margin-bottom: 3rem;
+      font-weight: 400;
+      letter-spacing: 1px;
+      font-style: italic;
+    }
+    
+    .details {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      margin-bottom: 3rem;
+      letter-spacing: 1px;
+    }
+    
+    .time {
+      font-size: 1.8rem;
+      font-weight: 100;
+      letter-spacing: 3px;
+      font-variant-numeric: tabular-nums;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    
+    @media (max-width: 768px) {
+      h1 { font-size: 0.8rem; }
+      .countdown { font-size: 6rem; }
+      .label { font-size: 1rem; }
+      .date { font-size: 0.9rem; }
+      .time { font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>countdown to</h1>
+    <div class="date">August 22, 2025</div>
+    <div class="countdown" id="days">--</div>
+    <div class="label">days remaining</div>
+    <div class="details" id="details"></div>
+    <div class="time" id="time"></div>
+  </div>
+  <script src="newtab.js"></script>
+</body>
+</html>

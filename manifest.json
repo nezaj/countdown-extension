@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "New Tab Countdown to August 22, 2025",
+  "version": "1.0",
+  "description": "Shows days remaining until August 22, 2025 on every new tab",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  }
+}
